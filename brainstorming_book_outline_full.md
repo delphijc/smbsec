@@ -1,6 +1,6 @@
-# AI‑Powered Cybersecurity Book Outline
+# AI enabled blue team operations for small to medium size businesses Book Outline
 
-**Title:** *AI‑Powered Cybersecurity: Leveraging Machine Learning to Defend with Limited Resources*
+**Title:** *AI enabled blue team operations for small to medium size businesses*
 
 ## Core Premise
 Security teams face an ever‑growing threat landscape while operating under tight budgets and staffing constraints. By integrating AI—especially machine‑learning models for anomaly detection, threat intelligence, and automated response—teams can amplify their capabilities, reduce manual toil, and stay ahead of attackers.

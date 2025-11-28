@@ -1,7 +1,7 @@
 installation:
   version: 6.0.0-alpha.12
-  installDate: '2025-11-26T19:26:37.932Z'
-  lastUpdated: '2025-11-26T19:26:37.932Z'
+  installDate: '2025-11-28T16:33:59.718Z'
+  lastUpdated: '2025-11-28T16:33:59.718Z'
 modules:
   - core
   - cis

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Chapter 1 – The Cybersecurity Landscape Today | AI enabled blue team operations for small to medium size businesses</title>
+<meta name="keywords" content="">
+<meta name="description" content="Chapter 1 – The Cybersecurity Landscape Today
+1.1 The Evolving Threat Environment
+
+Attack surface expansion: Cloud, IoT, supply‑chain, and remote‑work vectors.
+Sophistication of adversaries: APT groups, ransomware‑as‑a‑service, and automated exploitation.
+Regulatory pressure: GDPR, CCPA, PCI‑DSS, and emerging AI‑specific compliance frameworks.
+
+1.2 Budget and Staffing Constraints
+
+Talent scarcity: 70% of organizations report difficulty hiring qualified security professionals.
+Cost of tooling: Commercial SIEMs, threat‑intel feeds, and managed services can consume 30–40% of a security budget.
+Operational overhead: Manual triage, alert fatigue, and incident‑response playbook maintenance.
+
+1.3 The Case for AI‑Powered Defense
+
+Force multiplier: AI can process terabytes of telemetry in seconds, surface hidden patterns, and prioritize alerts.
+Automation of routine tasks: Log parsing, IOC enrichment, and basic triage reduce analyst toil.
+Scalability: Open‑source AI models can run on commodity hardware or low‑cost cloud instances, fitting tight budgets.
+
+1.4 Book Structure Overview
+
+Foundations: Core security concepts and AI fundamentals.
+Tool‑centric chapters: Each chapter focuses on a specific AI tool or technique and its practical deployment.
+Case studies: Real‑world deployments in small teams, linked to the reference file.
+Implementation guide: Step‑by‑step instructions for building a low‑cost AI security stack.
+
+
+This chapter sets the stage for why AI is not just a luxury but a necessity for modern security teams operating under resource constraints.">
+<meta name="author" content="delphijc">
+<link rel="canonical" href="http://localhost:1313/chapter1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/chapter1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="AI enabled blue team operations for small to medium size businesses (Alt + H)">AI enabled blue team operations for small to medium size businesses</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter1/" title="Chapter 1">
+                    <span class="active">Chapter 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter2/" title="Chapter 2">
+                    <span>Chapter 2</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter3/" title="Chapter 3">
+                    <span>Chapter 3</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter4/" title="Chapter 4">
+                    <span>Chapter 4</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter5/" title="Chapter 5">
+                    <span>Chapter 5</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter6/" title="Chapter 6">
+                    <span>Chapter 6</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter7/" title="Chapter 7">
+                    <span>Chapter 7</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter8/" title="Chapter 8">
+                    <span>Chapter 8</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter9/" title="Chapter 9">
+                    <span>Chapter 9</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter10/" title="Chapter 10">
+                    <span>Chapter 10</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Chapter 1 – The Cybersecurity Landscape Today
+    </h1>
+    <div class="post-meta"><span title='2025-11-28 00:00:00 +0000 UTC'>November 28, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>delphijc</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="chapter1--the-cybersecurity-landscape-today">Chapter 1 – The Cybersecurity Landscape Today<a hidden class="anchor" aria-hidden="true" href="#chapter1--the-cybersecurity-landscape-today">#</a></h1>
+<h2 id="11-the-evolving-threat-environment">1.1 The Evolving Threat Environment<a hidden class="anchor" aria-hidden="true" href="#11-the-evolving-threat-environment">#</a></h2>
+<ul>
+<li><strong>Attack surface expansion</strong>: Cloud, IoT, supply‑chain, and remote‑work vectors.</li>
+<li><strong>Sophistication of adversaries</strong>: APT groups, ransomware‑as‑a‑service, and automated exploitation.</li>
+<li><strong>Regulatory pressure</strong>: GDPR, CCPA, PCI‑DSS, and emerging AI‑specific compliance frameworks.</li>
+</ul>
+<h2 id="12-budget-and-staffing-constraints">1.2 Budget and Staffing Constraints<a hidden class="anchor" aria-hidden="true" href="#12-budget-and-staffing-constraints">#</a></h2>
+<ul>
+<li><strong>Talent scarcity</strong>: 70% of organizations report difficulty hiring qualified security professionals.</li>
+<li><strong>Cost of tooling</strong>: Commercial SIEMs, threat‑intel feeds, and managed services can consume 30–40% of a security budget.</li>
+<li><strong>Operational overhead</strong>: Manual triage, alert fatigue, and incident‑response playbook maintenance.</li>
+</ul>
+<h2 id="13-the-case-for-aipowered-defense">1.3 The Case for AI‑Powered Defense<a hidden class="anchor" aria-hidden="true" href="#13-the-case-for-aipowered-defense">#</a></h2>
+<ul>
+<li><strong>Force multiplier</strong>: AI can process terabytes of telemetry in seconds, surface hidden patterns, and prioritize alerts.</li>
+<li><strong>Automation of routine tasks</strong>: Log parsing, IOC enrichment, and basic triage reduce analyst toil.</li>
+<li><strong>Scalability</strong>: Open‑source AI models can run on commodity hardware or low‑cost cloud instances, fitting tight budgets.</li>
+</ul>
+<h2 id="14-book-structure-overview">1.4 Book Structure Overview<a hidden class="anchor" aria-hidden="true" href="#14-book-structure-overview">#</a></h2>
+<ul>
+<li><strong>Foundations</strong>: Core security concepts and AI fundamentals.</li>
+<li><strong>Tool‑centric chapters</strong>: Each chapter focuses on a specific AI tool or technique and its practical deployment.</li>
+<li><strong>Case studies</strong>: Real‑world deployments in small teams, linked to the reference file.</li>
+<li><strong>Implementation guide</strong>: Step‑by‑step instructions for building a low‑cost AI security stack.</li>
+</ul>
+<hr>
+<p><em>This chapter sets the stage for why AI is not just a luxury but a necessity for modern security teams operating under resource constraints.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">AI enabled blue team operations for small to medium size businesses</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,5 +1,10 @@
 # Example .gitignore content
+.qwen/
+QWEN.md
+.bmad/
 security-stack/
 node_modules/
 .env
 *.log
+.gitignore.bak
+.gitignore.working

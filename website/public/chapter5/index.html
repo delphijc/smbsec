@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Chapter 5 – Building a Low‑Cost AI Security Stack | AI enabled blue team operations for small to medium size businesses</title>
+<meta name="keywords" content="">
+<meta name="description" content="Chapter 5 – Building a Low‑Cost AI Security Stack
+5.1 Architecture Overview
+&#43;-------------------&#43;          &#43;-------------------&#43;
+|  Data Sources    |  ---&gt;   |  Ingestion Layer  |
+&#43;-------------------&#43;          &#43;-------------------&#43;
+          |                               |
+          v                               v
+&#43;-------------------&#43;          &#43;-------------------&#43;
+|  Feature Store   |  ---&gt;   |  Model Serving    |
+&#43;-------------------&#43;          &#43;-------------------&#43;
+          |                               |
+          v                               v
+&#43;-------------------&#43;          &#43;-------------------&#43;
+|  Alert Hub (SIEM)|  &lt;---   |  Orchestration    |
+&#43;-------------------&#43;          &#43;-------------------&#43;
+
+Ingestion: Beats, syslog, and custom collectors feed into a central store.
+Feature Store: A PostgreSQL database holds structured telemetry; FAISS indexes store embeddings.
+Model Serving: FastAPI endpoints expose LLMs (Llama‑2, Mistral) and RL policies.
+Alert Hub: Elastic SIEM aggregates alerts and provides dashboards.
+Orchestration: A lightweight Flask app coordinates playbooks and active responses.
+
+5.2 Hardware &amp; Cost Considerations
+
+  
+      
+          Component
+          Minimum Specs
+          Approx. Cost (USD)
+      
+  
+  
+      
+          VM for Elastic Stack
+          4 vCPU, 16 GB RAM
+          $30/month (AWS t3.medium)
+      
+      
+          GPU for LLM inference
+          1 x NVIDIA T4
+          $0.35/hr (AWS g4dn.xlarge)
+      
+      
+          Storage
+          500 GB SSD
+          $10/month
+      
+      
+          Backup
+          1 TB
+          $5/month
+      
+      
+          Network
+          1 Gbps
+          $0
+      
+  
+
+
+Total: Roughly $50/month for a small team.
+Scaling: Add nodes or upgrade GPU as data volume grows.
+
+5.3 Open‑Source Tool Stack
+
+  
+      
+          Tool
+          Purpose
+          Key Features
+      
+  
+  
+      
+          Elastic Stack
+          Log ingestion, search, and SIEM
+          Beats, Logstash, Kibana, SIEM app
+      
+      
+          Wazuh
+          Host‑based intrusion detection
+          Agent, rule engine, active response
+      
+      
+          OpenCTI
+          Threat‑intel management
+          STIX/TAXII API, connectors
+      
+      
+          Llama‑2
+          Log summarization, IOC extraction
+          Hugging Face Transformers, fine‑tune
+      
+      
+          Mistral
+          Lightweight LLM for on‑prem inference
+          7B parameters, fast inference
+      
+      
+          Sentence‑Transformers
+          Dense embeddings for similarity
+          Pre‑trained models, GPU support
+      
+      
+          FAISS
+          Approximate nearest‑neighbor search
+          Scales to billions of vectors
+      
+      
+          Stable‑Baselines3
+          RL for playbook generation
+          PPO, DQN, SAC implementations
+      
+      
+          Neo4j &#43; GNNs
+          Graph analytics on threat intel
+          Cypher queries, PyTorch Geometric
+      
+      
+          OpenVAS
+          Vulnerability scanning
+          Open‑source scanner, CVE database
+      
+  
+
+5.4 Deployment Steps
+
+Provision Infrastructure – Use Terraform or CloudFormation to spin up VMs, GPU instances, and storage.
+Install Elastic Stack – Follow the official Elastic quickstart; enable the SIEM app.
+Deploy Wazuh – Install the manager and agents; configure rules for common threats.
+Set Up OpenCTI – Run the Docker Compose stack; import initial threat feeds.
+Model Training &amp; Serving
+
+Fine‑tune Llama‑2 on internal logs.
+Train an RL policy with Stable‑Baselines3.
+Expose models via FastAPI.
+
+
+Feature Store &amp; FAISS Index – Load embeddings into FAISS; store metadata in PostgreSQL.
+Orchestrator – Deploy the Flask app; configure webhooks in Elastic SIEM.
+Testing – Simulate alerts; verify that playbooks trigger and Wazuh responds.
+Monitoring &amp; Logging – Use Prometheus &#43; Grafana to monitor resource usage.
+Documentation – Write a run‑book for onboarding new analysts.
+
+5.5 Maintenance &amp; Scaling
+
+Model Retraining – Schedule nightly retraining jobs; use Airflow for orchestration.
+Data Retention – Configure ILM policies in Elastic to tier older data to cheaper storage.
+Security Hardening – Enable TLS for all services; rotate secrets via Vault.
+Cost Optimization – Spot instances for GPU inference; use auto‑scaling groups.
+
+
+This chapter provides a practical, low‑cost blueprint for building a full AI‑powered security stack that a small team can deploy, maintain, and scale.">
+<meta name="author" content="delphijc">
+<link rel="canonical" href="http://localhost:1313/chapter5/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/chapter5/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="AI enabled blue team operations for small to medium size businesses (Alt + H)">AI enabled blue team operations for small to medium size businesses</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter1/" title="Chapter 1">
+                    <span>Chapter 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter2/" title="Chapter 2">
+                    <span>Chapter 2</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter3/" title="Chapter 3">
+                    <span>Chapter 3</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter4/" title="Chapter 4">
+                    <span>Chapter 4</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter5/" title="Chapter 5">
+                    <span class="active">Chapter 5</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter6/" title="Chapter 6">
+                    <span>Chapter 6</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter7/" title="Chapter 7">
+                    <span>Chapter 7</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter8/" title="Chapter 8">
+                    <span>Chapter 8</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter9/" title="Chapter 9">
+                    <span>Chapter 9</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/chapter10/" title="Chapter 10">
+                    <span>Chapter 10</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Chapter 5 – Building a Low‑Cost AI Security Stack
+    </h1>
+    <div class="post-meta"><span title='2025-11-28 00:00:00 +0000 UTC'>November 28, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>delphijc</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="chapter5--building-a-lowcost-ai-security-stack">Chapter 5 – Building a Low‑Cost AI Security Stack<a hidden class="anchor" aria-hidden="true" href="#chapter5--building-a-lowcost-ai-security-stack">#</a></h1>
+<h2 id="51-architecture-overview">5.1 Architecture Overview<a hidden class="anchor" aria-hidden="true" href="#51-architecture-overview">#</a></h2>
+<pre tabindex="0"><code>+-------------------+          +-------------------+
+|  Data Sources    |  ---&gt;   |  Ingestion Layer  |
++-------------------+          +-------------------+
+          |                               |
+          v                               v
++-------------------+          +-------------------+
+|  Feature Store   |  ---&gt;   |  Model Serving    |
++-------------------+          +-------------------+
+          |                               |
+          v                               v
++-------------------+          +-------------------+
+|  Alert Hub (SIEM)|  &lt;---   |  Orchestration    |
++-------------------+          +-------------------+
+</code></pre><ul>
+<li><strong>Ingestion</strong>: Beats, syslog, and custom collectors feed into a central store.</li>
+<li><strong>Feature Store</strong>: A PostgreSQL database holds structured telemetry; FAISS indexes store embeddings.</li>
+<li><strong>Model Serving</strong>: FastAPI endpoints expose LLMs (Llama‑2, Mistral) and RL policies.</li>
+<li><strong>Alert Hub</strong>: Elastic SIEM aggregates alerts and provides dashboards.</li>
+<li><strong>Orchestration</strong>: A lightweight Flask app coordinates playbooks and active responses.</li>
+</ul>
+<h2 id="52-hardware--cost-considerations">5.2 Hardware &amp; Cost Considerations<a hidden class="anchor" aria-hidden="true" href="#52-hardware--cost-considerations">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Minimum Specs</th>
+          <th>Approx. Cost (USD)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>VM for Elastic Stack</td>
+          <td>4 vCPU, 16 GB RAM</td>
+          <td>$30/month (AWS t3.medium)</td>
+      </tr>
+      <tr>
+          <td>GPU for LLM inference</td>
+          <td>1 x NVIDIA T4</td>
+          <td>$0.35/hr (AWS g4dn.xlarge)</td>
+      </tr>
+      <tr>
+          <td>Storage</td>
+          <td>500 GB SSD</td>
+          <td>$10/month</td>
+      </tr>
+      <tr>
+          <td>Backup</td>
+          <td>1 TB</td>
+          <td>$5/month</td>
+      </tr>
+      <tr>
+          <td>Network</td>
+          <td>1 Gbps</td>
+          <td>$0</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li><strong>Total</strong>: Roughly $50/month for a small team.</li>
+<li><strong>Scaling</strong>: Add nodes or upgrade GPU as data volume grows.</li>
+</ul>
+<h2 id="53-opensource-tool-stack">5.3 Open‑Source Tool Stack<a hidden class="anchor" aria-hidden="true" href="#53-opensource-tool-stack">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Purpose</th>
+          <th>Key Features</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Elastic Stack</strong></td>
+          <td>Log ingestion, search, and SIEM</td>
+          <td>Beats, Logstash, Kibana, SIEM app</td>
+      </tr>
+      <tr>
+          <td><strong>Wazuh</strong></td>
+          <td>Host‑based intrusion detection</td>
+          <td>Agent, rule engine, active response</td>
+      </tr>
+      <tr>
+          <td><strong>OpenCTI</strong></td>
+          <td>Threat‑intel management</td>
+          <td>STIX/TAXII API, connectors</td>
+      </tr>
+      <tr>
+          <td><strong>Llama‑2</strong></td>
+          <td>Log summarization, IOC extraction</td>
+          <td>Hugging Face Transformers, fine‑tune</td>
+      </tr>
+      <tr>
+          <td><strong>Mistral</strong></td>
+          <td>Lightweight LLM for on‑prem inference</td>
+          <td>7B parameters, fast inference</td>
+      </tr>
+      <tr>
+          <td><strong>Sentence‑Transformers</strong></td>
+          <td>Dense embeddings for similarity</td>
+          <td>Pre‑trained models, GPU support</td>
+      </tr>
+      <tr>
+          <td><strong>FAISS</strong></td>
+          <td>Approximate nearest‑neighbor search</td>
+          <td>Scales to billions of vectors</td>
+      </tr>
+      <tr>
+          <td><strong>Stable‑Baselines3</strong></td>
+          <td>RL for playbook generation</td>
+          <td>PPO, DQN, SAC implementations</td>
+      </tr>
+      <tr>
+          <td><strong>Neo4j + GNNs</strong></td>
+          <td>Graph analytics on threat intel</td>
+          <td>Cypher queries, PyTorch Geometric</td>
+      </tr>
+      <tr>
+          <td><strong>OpenVAS</strong></td>
+          <td>Vulnerability scanning</td>
+          <td>Open‑source scanner, CVE database</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="54-deployment-steps">5.4 Deployment Steps<a hidden class="anchor" aria-hidden="true" href="#54-deployment-steps">#</a></h2>
+<ol>
+<li><strong>Provision Infrastructure</strong> – Use Terraform or CloudFormation to spin up VMs, GPU instances, and storage.</li>
+<li><strong>Install Elastic Stack</strong> – Follow the official Elastic quickstart; enable the SIEM app.</li>
+<li><strong>Deploy Wazuh</strong> – Install the manager and agents; configure rules for common threats.</li>
+<li><strong>Set Up OpenCTI</strong> – Run the Docker Compose stack; import initial threat feeds.</li>
+<li><strong>Model Training &amp; Serving</strong>
+<ul>
+<li>Fine‑tune Llama‑2 on internal logs.</li>
+<li>Train an RL policy with Stable‑Baselines3.</li>
+<li>Expose models via FastAPI.</li>
+</ul>
+</li>
+<li><strong>Feature Store &amp; FAISS Index</strong> – Load embeddings into FAISS; store metadata in PostgreSQL.</li>
+<li><strong>Orchestrator</strong> – Deploy the Flask app; configure webhooks in Elastic SIEM.</li>
+<li><strong>Testing</strong> – Simulate alerts; verify that playbooks trigger and Wazuh responds.</li>
+<li><strong>Monitoring &amp; Logging</strong> – Use Prometheus + Grafana to monitor resource usage.</li>
+<li><strong>Documentation</strong> – Write a run‑book for onboarding new analysts.</li>
+</ol>
+<h2 id="55-maintenance--scaling">5.5 Maintenance &amp; Scaling<a hidden class="anchor" aria-hidden="true" href="#55-maintenance--scaling">#</a></h2>
+<ul>
+<li><strong>Model Retraining</strong> – Schedule nightly retraining jobs; use Airflow for orchestration.</li>
+<li><strong>Data Retention</strong> – Configure ILM policies in Elastic to tier older data to cheaper storage.</li>
+<li><strong>Security Hardening</strong> – Enable TLS for all services; rotate secrets via Vault.</li>
+<li><strong>Cost Optimization</strong> – Spot instances for GPU inference; use auto‑scaling groups.</li>
+</ul>
+<hr>
+<p><em>This chapter provides a practical, low‑cost blueprint for building a full AI‑powered security stack that a small team can deploy, maintain, and scale.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">AI enabled blue team operations for small to medium size businesses</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
