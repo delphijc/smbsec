@@ -1,10 +1,17 @@
 # Example .gitignore content
+.claude/
 .qwen/
 QWEN.md
 .bmad/
+.agent/
+.gemini/
 security-stack/
 node_modules/
 .env
 *.log
-.gitignore.bak
+.gitignore.gitadd
 .gitignore.working
+
+# Hugo build artifacts
+website/public/
+website/resources/

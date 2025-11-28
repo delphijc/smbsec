@@ -1,4 +1,6 @@
-baseURL = "https://example.com/"
+baseURL = "/"
+relativeURLs = true
+canonifyURLs = false
 languageCode = "en-us"
 title = "AI enabled blue team operations for small to medium size businesses"
 theme = "PaperMod"
