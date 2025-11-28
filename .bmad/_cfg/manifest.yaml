@@ -1,9 +1,0 @@
-installation:
-  version: 6.0.0-alpha.12
-  installDate: '2025-11-28T16:33:59.718Z'
-  lastUpdated: '2025-11-28T16:33:59.718Z'
-modules:
-  - core
-  - cis
-ides:
-  - qwen
