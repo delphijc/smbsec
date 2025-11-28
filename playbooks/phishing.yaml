@@ -1,0 +1,5 @@
+# Phishing Playbook
+# This template outlines steps to detect, respond, and remediate a phishing incident.
+
+- name: Phishing Incident Response
+  description: "Detect and mitigate phishing attempts targeting users.")

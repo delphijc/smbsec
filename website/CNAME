@@ -1,0 +1,4 @@
+name: ai-sec-book
+branch: main
+buildCommand: hugo --minify
+publishDir: public

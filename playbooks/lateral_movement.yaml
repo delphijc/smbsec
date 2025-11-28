@@ -1,0 +1,5 @@
+# Lateral Movement Playbook
+# This template outlines steps to detect, respond, and remediate lateral movement.
+
+- name: Lateral Movement Incident Response
+  description: "Detect and mitigate lateral movement within the network.")

@@ -1,0 +1,5 @@
+# Ransomware Playbook
+# This template outlines steps to detect, respond, and remediate ransomware.
+
+- name: Ransomware Incident Response
+  description: "Detect and mitigate ransomware attacks.")

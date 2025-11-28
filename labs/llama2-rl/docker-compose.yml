@@ -1,0 +1,18 @@
+# Docker Compose for Llama‑2 + RL Playbooks
+# This file sets up a minimal environment for running Llama‑2 with reinforcement learning playbooks.
+
+version: "3.8"
+services:
+  llama2:
+    image: ghcr.io/meta-llama/llama-2-7b:latest
+    environment:
+      - MODEL_NAME=llama-2-7b
+    ports:
+      - "8000:8000"
+  rl-playbook:
+    image: python:3.11-slim
+    depends_on:
+      - llama2
+    volumes:
+      - ./playbooks:/app/playbooks
+    command: "python /app/playbooks/run_rl.py"

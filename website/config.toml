@@ -1,0 +1,9 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "AI‑Sec Book"
+theme = "PaperMod"
+[params]
+  description = "A practical guide to AI‑Sec"
+  author = "delphijc"
+  showReadingTime = true
+  disableSpecial1 = false
