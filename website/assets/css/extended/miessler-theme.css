@@ -1,0 +1,314 @@
+/* ============================================
+   Daniel Miessler-Inspired Theme Override
+   Academic-Chic aesthetic with light/dark modes
+   ============================================ */
+
+/* ============================================
+   LIGHT MODE - Daniel Miessler Aesthetic
+   ============================================ */
+:root {
+    /* Color Palette - Warm, Book-like */
+    --theme: rgb(234, 233, 223);           /* Cream background #EAE9DF */
+    --entry: rgb(234, 233, 223);           /* Same as theme for consistency */
+    --primary: rgb(44, 24, 16);            /* Dark brown text #2C1810 */
+    --secondary: rgb(89, 58, 46);          /* Medium brown for secondary text */
+    --tertiary: rgb(209, 206, 193);        /* Slightly darker cream for borders */
+    --content: rgb(44, 24, 16);            /* Dark brown for content text */
+    --code-bg: rgb(224, 221, 208);         /* Slightly darker cream for code */
+    --border: rgb(209, 206, 193);          /* Subtle border color */
+    
+    /* Layout - Spacious, Reader-focused */
+    --main-width: 820px;                   /* Wider for comfortable reading */
+    --gap: 32px;                           /* More generous spacing */
+    --content-gap: 24px;                   /* Increased content gap */
+}
+
+/* ============================================
+   DARK MODE - Inverted Warm Aesthetic
+   ============================================ */
+:root[data-theme="dark"] {
+    /* Color Palette - Inverted Warm */
+    --theme: rgb(44, 24, 16);              /* Dark warm background #2C1810 */
+    --entry: rgb(54, 34, 26);              /* Slightly lighter for entries */
+    --primary: rgb(234, 233, 223);         /* Cream text #EAE9DF */
+    --secondary: rgb(209, 206, 193);       /* Slightly darker cream for secondary */
+    --tertiary: rgb(89, 58, 46);           /* Medium brown for accents */
+    --content: rgb(234, 233, 223);         /* Cream for content text */
+    --code-bg: rgb(34, 20, 13);            /* Darker background for code */
+    --border: rgb(89, 58, 46);             /* Brown border for contrast */
+}
+
+/* ============================================
+   TYPOGRAPHY - Serif, Large, Readable
+   ============================================ */
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22px;
+    line-height: 1.7;
+    color: var(--content);
+}
+
+/* Headings - Serif with hierarchy */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--primary);
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Paragraphs - Generous spacing */
+p {
+    margin-bottom: 1.2em;
+    line-height: 1.8;
+}
+
+/* Links - Subtle, elegant */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--tertiary);
+    transition: border-color 0.2s ease;
+}
+
+a:hover {
+    border-bottom-color: var(--primary);
+}
+
+/* ============================================
+   NAVIGATION - Small-caps, Clean
+   ============================================ */
+.nav a,
+#menu a,
+.menu a,
+header nav a {
+    font-variant: small-caps;
+    font-size: 0.95em;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    border-bottom: none;
+    color: var(--secondary);
+}
+
+.nav a:hover,
+#menu a:hover,
+.menu a:hover,
+header nav a:hover {
+    color: var(--primary);
+}
+
+/* Logo/Site title */
+.logo a,
+.site-name a {
+    font-variant: small-caps;
+    font-size: 1.1em;
+    letter-spacing: 0.08em;
+    border-bottom: none;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* ============================================
+   LAYOUT - Single Column, Wide Margins
+   ============================================ */
+.main {
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    padding: var(--gap);
+    margin: 0 auto;
+}
+
+/* Content area - extra breathing room */
+.post-content,
+.page-content,
+article {
+    padding: 2em 0;
+}
+
+/* Page header - minimal, elegant */
+.page-header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+
+/* Post metadata - small-caps, subtle */
+.post-meta,
+.post-metadata,
+.meta {
+    font-variant: small-caps;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    color: var(--secondary);
+    margin-bottom: 2em;
+}
+
+/* ============================================
+   CODE BLOCKS - Minimal styling
+   ============================================ */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    background: var(--code-bg);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+pre {
+    background: var(--code-bg);
+    padding: 1.5em;
+    border-radius: 5px;
+    overflow-x: auto;
+    line-height: 1.5;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* ============================================
+   LISTS - Comfortable spacing
+   ============================================ */
+ul, ol {
+    margin-bottom: 1.5em;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+    line-height: 1.7;
+}
+
+/* ============================================
+   BLOCKQUOTES - Elegant emphasis
+   ============================================ */
+blockquote {
+    border-left: 3px solid var(--tertiary);
+    padding-left: 1.5em;
+    margin: 1.5em 0;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+/* ============================================
+   TABLES - Clean, readable
+   ============================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+}
+
+th, td {
+    padding: 0.75em;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+th {
+    background: var(--code-bg);
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+/* ============================================
+   RESPONSIVE - Mobile/Tablet adjustments
+   ============================================ */
+@media (max-width: 768px) {
+    body {
+        font-size: 19px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    .page-header h1 {
+        font-size: 2.2em;
+    }
+    
+    .main {
+        padding: var(--content-gap);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 17px;
+    }
+    
+    .main {
+        padding: 16px;
+    }
+    
+    ul, ol {
+        padding-left: 1.5em;
+    }
+}
+
+/* ============================================
+   FOOTER - Minimal
+   ============================================ */
+footer {
+    font-variant: small-caps;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    color: var(--secondary);
+    text-align: center;
+    padding: 2em 0;
+    border-top: 1px solid var(--border);
+    margin-top: 3em;
+}
+
+/* ============================================
+   PAGINATION - Clean buttons
+   ============================================ */
+.pagination a {
+    background: var(--primary);
+    color: var(--theme);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    font-variant: small-caps;
+}
+
+.pagination a:hover {
+    opacity: 0.8;
+}
+
+/* ============================================
+   SEARCH - Integrated styling
+   ============================================ */
+#searchInput,
+.search-input,
+input[type="search"] {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1em;
+    padding: 0.5em;
+    border: 1px solid var(--border);
+    background: var(--theme);
+    color: var(--content);
+    border-radius: 3px;
+}

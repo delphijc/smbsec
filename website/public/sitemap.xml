@@ -2,41 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/chapter1/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter1/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/chapter2/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter2/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/chapter3/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter3/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/chapter4/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter4/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/chapter5/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter5/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/chapter6/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter6/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/chapter7/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter7/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/chapter8/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter8/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/chapter9/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter9/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/chapter10/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/chapter10/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>//localhost:1313/books/ai-blue-team-ops/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>//localhost:1313/books/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/about/</loc>
+  </url><url>
+    <loc>//localhost:1313/blogs/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>

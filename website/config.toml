@@ -2,7 +2,7 @@ baseURL = "/"
 relativeURLs = true
 canonifyURLs = false
 languageCode = "en-us"
-title = "AI enabled blue team operations for small to medium size businesses"
+title = "AI SMB SecOps Books, Blogs, and Resources"
 theme = "PaperMod"
 [params]
   description = "A practical guide to AI‑Sec"
@@ -17,52 +17,17 @@ theme = "PaperMod"
     url = "/"
     weight = 10
   [[menu.main]]
-    identifier = "chapter1"
-    name = "Chapter 1"
-    url = "/chapter1/"
+    identifier = "books"
+    name = "Books"
+    url = "/books/"
     weight = 20
   [[menu.main]]
-    identifier = "chapter2"
-    name = "Chapter 2"
-    url = "/chapter2/"
+    identifier = "blogs"
+    name = "Blogs"
+    url = "/blogs/"
     weight = 30
   [[menu.main]]
-    identifier = "chapter3"
-    name = "Chapter 3"
-    url = "/chapter3/"
+    identifier = "about"
+    name = "About"
+    url = "/about/"
     weight = 40
-  [[menu.main]]
-    identifier = "chapter4"
-    name = "Chapter 4"
-    url = "/chapter4/"
-    weight = 50
-  [[menu.main]]
-    identifier = "chapter5"
-    name = "Chapter 5"
-    url = "/chapter5/"
-    weight = 60
-  [[menu.main]]
-    identifier = "chapter6"
-    name = "Chapter 6"
-    url = "/chapter6/"
-    weight = 70
-  [[menu.main]]
-    identifier = "chapter7"
-    name = "Chapter 7"
-    url = "/chapter7/"
-    weight = 80
-  [[menu.main]]
-    identifier = "chapter8"
-    name = "Chapter 8"
-    url = "/chapter8/"
-    weight = 90
-  [[menu.main]]
-    identifier = "chapter9"
-    name = "Chapter 9"
-    url = "/chapter9/"
-    weight = 100
-  [[menu.main]]
-    identifier = "chapter10"
-    name = "Chapter 10"
-    url = "/chapter10/"
-    weight = 110

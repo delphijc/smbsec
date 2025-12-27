@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>AI enabled blue team operations for small to medium size businesses</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on AI enabled blue team operations for small to medium size businesses</description>
+    <title>Welcome on AI SMB SecOps Books, Blogs, and Resources</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in Welcome on AI SMB SecOps Books, Blogs, and Resources</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chapter 1 – The Cybersecurity Landscape Today</title>
-      <link>http://localhost:1313/chapter1/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter1/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter1/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter1/</guid>
       <description>&lt;h1 id=&#34;chapter1--the-cybersecurity-landscape-today&#34;&gt;Chapter 1 – The Cybersecurity Landscape Today&lt;/h1&gt;
 &lt;h2 id=&#34;11-the-evolving-threat-environment&#34;&gt;1.1 The Evolving Threat Environment&lt;/h2&gt;
 &lt;ul&gt;
@@ -44,9 +44,9 @@
     </item>
     <item>
       <title>Chapter 2 – Machine Learning Basics for Security</title>
-      <link>http://localhost:1313/chapter2/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter2/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter2/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter2/</guid>
       <description>&lt;h1 id=&#34;chapter2--machine-learning-basics-for-security&#34;&gt;Chapter 2 – Machine Learning Basics for Security&lt;/h1&gt;
 &lt;h2 id=&#34;21-core-machinelearning-concepts&#34;&gt;2.1 Core Machine‑Learning Concepts&lt;/h2&gt;
 &lt;ul&gt;
@@ -112,9 +112,9 @@
     </item>
     <item>
       <title>Chapter 3 – AI‑Driven Threat Detection</title>
-      <link>http://localhost:1313/chapter3/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter3/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter3/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter3/</guid>
       <description>&lt;h1 id=&#34;chapter3--aidriven-threat-detection&#34;&gt;Chapter 3 – AI‑Driven Threat Detection&lt;/h1&gt;
 &lt;h2 id=&#34;31-the-threatdetection-pipeline&#34;&gt;3.1 The Threat‑Detection Pipeline&lt;/h2&gt;
 &lt;ol&gt;
@@ -162,9 +162,9 @@
     </item>
     <item>
       <title>Chapter 4 – Automated Incident Response</title>
-      <link>http://localhost:1313/chapter4/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter4/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter4/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter4/</guid>
       <description>&lt;h1 id=&#34;chapter4--automated-incident-response&#34;&gt;Chapter 4 – Automated Incident Response&lt;/h1&gt;
 &lt;h2 id=&#34;41-the-incidentresponse-lifecycle&#34;&gt;4.1 The Incident‑Response Lifecycle&lt;/h2&gt;
 &lt;ol&gt;
@@ -213,9 +213,9 @@
     </item>
     <item>
       <title>Chapter 5 – Building a Low‑Cost AI Security Stack</title>
-      <link>http://localhost:1313/chapter5/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter5/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter5/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter5/</guid>
       <description>&lt;h1 id=&#34;chapter5--building-a-lowcost-ai-security-stack&#34;&gt;Chapter 5 – Building a Low‑Cost AI Security Stack&lt;/h1&gt;
 &lt;h2 id=&#34;51-architecture-overview&#34;&gt;5.1 Architecture Overview&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;+-------------------+          +-------------------+
@@ -372,9 +372,9 @@
     </item>
     <item>
       <title>Chapter 6 – Human‑AI Collaboration Models</title>
-      <link>http://localhost:1313/chapter6/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter6/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter6/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter6/</guid>
       <description>&lt;h1 id=&#34;chapter6--humanai-collaboration-models&#34;&gt;Chapter 6 – Human‑AI Collaboration Models&lt;/h1&gt;
 &lt;h2 id=&#34;61-the-analystai-workflow&#34;&gt;6.1 The Analyst‑AI Workflow&lt;/h2&gt;
 &lt;ol&gt;
@@ -434,9 +434,9 @@
     </item>
     <item>
       <title>Chapter 7 – Governance, Ethics, and Compliance</title>
-      <link>http://localhost:1313/chapter7/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter7/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter7/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter7/</guid>
       <description>&lt;h1 id=&#34;chapter7--governance-ethics-and-compliance&#34;&gt;Chapter 7 – Governance, Ethics, and Compliance&lt;/h1&gt;
 &lt;h2 id=&#34;71-ethical-foundations&#34;&gt;7.1 Ethical Foundations&lt;/h2&gt;
 &lt;ul&gt;
@@ -521,9 +521,9 @@
     </item>
     <item>
       <title>Chapter 8 – Case Studies &amp; Success Stories</title>
-      <link>http://localhost:1313/chapter8/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter8/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter8/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter8/</guid>
       <description>&lt;h1 id=&#34;chapter8--case-studies--success-stories&#34;&gt;Chapter 8 – Case Studies &amp;amp; Success Stories&lt;/h1&gt;
 &lt;h2 id=&#34;81-introduction&#34;&gt;8.1 Introduction&lt;/h2&gt;
 &lt;p&gt;This chapter presents real‑world deployments of the AI‑powered security stack described in the book. Each case study focuses on a small security team (5–15 analysts) that achieved measurable improvements in detection, response, and cost efficiency.&lt;/p&gt;
@@ -603,9 +603,9 @@
     </item>
     <item>
       <title>Chapter 9 – Roadmap for the Next Decade</title>
-      <link>http://localhost:1313/chapter9/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter9/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter9/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter9/</guid>
       <description>&lt;h1 id=&#34;chapter9--roadmap-for-the-next-decade&#34;&gt;Chapter 9 – Roadmap for the Next Decade&lt;/h1&gt;
 &lt;h2 id=&#34;91-emerging-ai-techniques&#34;&gt;9.1 Emerging AI Techniques&lt;/h2&gt;
 &lt;ul&gt;
@@ -690,9 +690,9 @@
     </item>
     <item>
       <title>Chapter 10 – Practical Implementation Guide</title>
-      <link>http://localhost:1313/chapter10/</link>
+      <link>//localhost:1313/books/ai-blue-team-ops/chapter10/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chapter10/</guid>
+      <guid>//localhost:1313/books/ai-blue-team-ops/chapter10/</guid>
       <description>&lt;h1 id=&#34;chapter10--practical-implementation-guide&#34;&gt;Chapter 10 – Practical Implementation Guide&lt;/h1&gt;
 &lt;h2 id=&#34;101-overview&#34;&gt;10.1 Overview&lt;/h2&gt;
 &lt;p&gt;This chapter provides a step‑by‑step blueprint for building, deploying, and maintaining the AI‑powered security stack described in the book. It assumes a small security team (5–15 analysts) with basic DevOps skills.&lt;/p&gt;
@@ -828,6 +828,25 @@
 &lt;/table&gt;
 &lt;h2 id=&#34;1012-summary&#34;&gt;10.12 Summary&lt;/h2&gt;
 &lt;p&gt;By following this guide, a small security team can deploy a full AI‑powered security stack that delivers real‑time detection, automated response, and continuous improvement—all while staying within budget constraints.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about&#34;&gt;About&lt;/h1&gt;
+&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+&lt;p&gt;This site is dedicated to making AI-enabled cybersecurity accessible and practical for small to medium-sized businesses. We believe that advanced security capabilities shouldn&amp;rsquo;t be limited to large enterprises with extensive resources.&lt;/p&gt;
+&lt;h2 id=&#34;our-mission&#34;&gt;Our Mission&lt;/h2&gt;
+&lt;p&gt;To bridge the gap between enterprise-level AI security solutions and the practical needs of SMB security teams through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Practical guidance&lt;/strong&gt; tailored for resource-constrained environments&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real-world examples&lt;/strong&gt; that SMBs can implement&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clear explanations&lt;/strong&gt; of complex AI/ML security concepts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Actionable strategies&lt;/strong&gt; for building effective blue team operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-author&#34;&gt;The Author&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;delphijc&lt;/strong&gt; is a cybersecurity professional focused on making advanced security technologies accessible to organizations of all sizes.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
