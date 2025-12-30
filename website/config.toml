@@ -4,6 +4,10 @@ canonifyURLs = false
 languageCode = "en-us"
 title = "AI SMB SecOps Books, Blogs, and Resources"
 theme = "PaperMod"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   description = "A practical guide to AI‑Sec"
   author = "delphijc"
