@@ -39,7 +39,7 @@ To help you get started on this journey, we have compiled a series of deep-dive 
 <div style="margin-bottom: 1.5rem;">
   <p><strong>Building Enterprise Security with Open Source Tools</strong>: A comprehensive walkthrough of the architecture and integration strategies.</p>
   <audio controls preload="metadata" style="width: 100%;">
-    <source src="building_enterprise_security_with_open_source_tools.m4a" type="audio/mp4">
+    <source src="Building_Enterprise_Security_with_Open_Source_Tools.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -47,7 +47,7 @@ To help you get started on this journey, we have compiled a series of deep-dive 
 <div style="margin-bottom: 1.5rem;">
   <p><strong>Enforcing Mandatory Security Configurations</strong>: How to use Wazuh and Ansible to ensure your baseline security controls are immutable.</p>
   <audio controls preload="metadata" style="width: 100%;">
-    <source src="enforcing_mandatory_security_configuration_details.m4a" type="audio/mp4">
+    <source src="Enforcing_Mandatory_Security_Configuration_Details.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -55,7 +55,7 @@ To help you get started on this journey, we have compiled a series of deep-dive 
 <div style="margin-bottom: 1.5rem;">
   <p><strong>NIST, MITRE, DMARC, and FIDO2 Mandates</strong>: Understanding the regulatory landscape and how this stack helps you achieve compliance.</p>
   <audio controls preload="metadata" style="width: 100%;">
-    <source src="nist_mitre_dmarc_fido2_mandates.m4a" type="audio/mp4">
+    <source src="NIST_MITRE_DMARC_FIDO2_Mandates.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
