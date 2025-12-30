@@ -36,8 +36,28 @@ Ultimately, technology is there to augment the human analyst, creating a "Centau
 
 To help you get started on this journey, we have compiled a series of deep-dive audio discussions covering the technical implementation and strategic mandates associated with this stack:
 
-*   **[Building Enterprise Security with Open Source Tools](building_enterprise_security_with_open_source_tools.m4a)**: A comprehensive walkthrough of the architecture and integration strategies.
-*   **[Enforcing Mandatory Security Configurations](enforcing_mandatory_security_configuration_details.m4a)**: How to use Wazuh and Ansible to ensure your baseline security controls are immutable.
-*   **[NIST, MITRE, DMARC, and FIDO2 Mandates](nist_mitre_dmarc_fido2_mandates.m4a)**: Understanding the regulatory landscape and how this stack helps you achieve compliance.
+<div style="margin-bottom: 1.5rem;">
+  <p><strong>Building Enterprise Security with Open Source Tools</strong>: A comprehensive walkthrough of the architecture and integration strategies.</p>
+  <audio controls preload="metadata" style="width: 100%;">
+    <source src="building_enterprise_security_with_open_source_tools.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div style="margin-bottom: 1.5rem;">
+  <p><strong>Enforcing Mandatory Security Configurations</strong>: How to use Wazuh and Ansible to ensure your baseline security controls are immutable.</p>
+  <audio controls preload="metadata" style="width: 100%;">
+    <source src="enforcing_mandatory_security_configuration_details.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div style="margin-bottom: 1.5rem;">
+  <p><strong>NIST, MITRE, DMARC, and FIDO2 Mandates</strong>: Understanding the regulatory landscape and how this stack helps you achieve compliance.</p>
+  <audio controls preload="metadata" style="width: 100%;">
+    <source src="nist_mitre_dmarc_fido2_mandates.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
 
 By leveraging these open-source tools and AI methodologies, small teams can punch above their weight, building a defense that is not only resilient but continuously evolving to meet the threats of tomorrow.

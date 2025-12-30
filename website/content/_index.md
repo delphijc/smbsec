@@ -2,9 +2,7 @@
 title = "Welcome"
 +++
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/avatar-blue-team.png" alt="AI Blue Team Defender" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-</div>
+
 
 # Welcome
 

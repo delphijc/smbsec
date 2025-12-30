@@ -6,7 +6,7 @@
     <description>Recent content in Welcome on AI SMB SecOps Books, Blogs, and Resources</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 23:30:00 -0500</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chapter 1 – The Cybersecurity Landscape Today</title>
@@ -828,6 +828,15 @@
 &lt;/table&gt;
 &lt;h2 id=&#34;1012-summary&#34;&gt;10.12 Summary&lt;/h2&gt;
 &lt;p&gt;By following this guide, a small security team can deploy a full AI‑powered security stack that delivers real‑time detection, automated response, and continuous improvement—all while staying within budget constraints.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building a Resilient Security Stack</title>
+      <link>//localhost:1313/blogs/building_a_resilient_security_stack/</link>
+      <pubDate>Mon, 29 Dec 2025 23:30:00 -0500</pubDate>
+      <guid>//localhost:1313/blogs/building_a_resilient_security_stack/</guid>
+      <description>&lt;p&gt;The cybersecurity landscape is increasingly hostile, especially for small to medium-sized businesses (SMBs). Facing advanced persistent threats (APTs) and ransomware syndicates with limited budgets and staff, SMBs need a force multiplier. This post summarizes the key insights from our book, &lt;em&gt;AI-Enabled Blue Teams&lt;/em&gt;, on how to build a resilient, AI-powered security stack without breaking the bank.&lt;/p&gt;
+&lt;h2 id=&#34;the-case-for-ai-in-defense&#34;&gt;The Case for AI in Defense&lt;/h2&gt;
+&lt;p&gt;As explored in &lt;a href=&#34;../../books/ai-blue-team-ops/chapter1&#34;&gt;Chapter 1&lt;/a&gt;, the traditional perimeter is dead. With 70% of organizations struggling to hire security talent, manual triage is no longer sustainable. Artificial Intelligence (AI) and Machine Learning (ML) are not just buzzwords—they are essential tools for survival. By automating routine tasks like log parsing and initial triage, AI frees up human analysts to focus on high-value decision-making.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
