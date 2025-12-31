@@ -839,6 +839,16 @@
 &lt;p&gt;AI excels at reading files and following directions. By using simple text files (Markdown &lt;code&gt;*.md&lt;/code&gt;, CSV &lt;code&gt;*.csv&lt;/code&gt;, etc.), we can create &amp;ldquo;Workflows&amp;rdquo;—groups of instructions that guide the AI before we even start prompting.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>The Quantum Countdown: Preparing Your Organization for a Post-Quantum World</title>
+      <link>//localhost:1313/blogs/quantum-decryption-plan/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blogs/quantum-decryption-plan/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Quantum Decryption Action Plan&#34; loading=&#34;lazy&#34; src=&#34;./blogs/quantum-decryption-plan/QuantumActionPlan.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;the-quantum-countdown-preparing-your-organization-for-a-post-quantum-world&#34;&gt;The Quantum Countdown: Preparing Your Organization for a Post-Quantum World&lt;/h1&gt;
+&lt;p&gt;Quantum computing is no longer a distant theoretical concept; it is on the horizon, bringing a &lt;strong&gt;seismic shift&lt;/strong&gt; in how organizations must approach cybersecurity risk. The advent of future quantum machines introduces the threat of &lt;strong&gt;quantum decryption&lt;/strong&gt;, which could fundamentally undermine the trust, confidentiality, and resilience of digital business.&lt;/p&gt;
+&lt;p&gt;While the technology offers transformative potential for fields like drug discovery and financial modeling, it also poses a &amp;ldquo;harvest now, decrypt later&amp;rdquo; (or Store Now, Decrypt Later - SNDL) threat. This means adversaries may be capturing encrypted sensitive data today with the intent to break its protections once powerful quantum computers become available.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>About</title>
       <link>//localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

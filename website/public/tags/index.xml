@@ -23,6 +23,13 @@
       <description></description>
     </item>
     <item>
+      <title>Cybersecurity</title>
+      <link>//localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Design Thinking</title>
       <link>//localhost:1313/tags/design-thinking/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
@@ -30,10 +37,31 @@
       <description></description>
     </item>
     <item>
+      <title>Post-Quantum Cryptography</title>
+      <link>//localhost:1313/tags/post-quantum-cryptography/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/post-quantum-cryptography/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Process Improvement</title>
       <link>//localhost:1313/tags/process-improvement/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/process-improvement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quantum Computing</title>
+      <link>//localhost:1313/tags/quantum-computing/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/quantum-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Risk Management</title>
+      <link>//localhost:1313/tags/risk-management/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/risk-management/</guid>
       <description></description>
     </item>
   </channel>
