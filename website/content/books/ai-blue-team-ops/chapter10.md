@@ -3,7 +3,7 @@ title = "Chapter 10 – Practical Implementation Guide"
 date = "2025-11-28"
 weight = 100
 +++
-# Chapter 10 – Practical Implementation Guide
+
 
 ## 10.1 Overview
 This chapter provides a step‑by‑step blueprint for building, deploying, and maintaining the AI‑powered security stack described in the book. It assumes a small security team (5–15 analysts) with basic DevOps skills.

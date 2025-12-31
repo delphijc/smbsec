@@ -14,15 +14,15 @@ This book provides a comprehensive guide to leveraging artificial intelligence f
 ## Table of Contents
 
 1. [Chapter 1 – The Cybersecurity Landscape Today](/books/ai-blue-team-ops/chapter1/)
-2. [Chapter 2 – Understanding AI and Machine Learning Fundamentals](/books/ai-blue-team-ops/chapter2/)
-3. [Chapter 3 – The Blue Team Framework](/books/ai-blue-team-ops/chapter3/)
-4. [Chapter 4 – AI-Enabled Threat Detection](/books/ai-blue-team-ops/chapter4/)
-5. [Chapter 5 – AI-Powered Incident Response](/books/ai-blue-team-ops/chapter5/)
-6. [Chapter 6 – Building Your AI Security Stack](/books/ai-blue-team-ops/chapter6/)
-7. [Chapter 7 – Implementing AI Blue Team Operations](/books/ai-blue-team-ops/chapter7/)
-8. [Chapter 8 – Measuring Success and ROI](/books/ai-blue-team-ops/chapter8/)
-9. [Chapter 9 – Challenges and Limitations](/books/ai-blue-team-ops/chapter9/)
-10. [Chapter 10 – The Future of AI in Cybersecurity](/books/ai-blue-team-ops/chapter10/)
+2. [Chapter 2 – Machine Learning Basics for Security](/books/ai-blue-team-ops/chapter2/)
+3. [Chapter 3 – AI‑Driven Threat Detection](/books/ai-blue-team-ops/chapter3/)
+4. [Chapter 4 – Automated Incident Response](/books/ai-blue-team-ops/chapter4/)
+5. [Chapter 5 – Building a Low‑Cost AI Security Stack](/books/ai-blue-team-ops/chapter5/)
+6. [Chapter 6 – Human‑AI Collaboration Models](/books/ai-blue-team-ops/chapter6/)
+7. [Chapter 7 – Governance, Ethics, and Compliance](/books/ai-blue-team-ops/chapter7/)
+8. [Chapter 8 – Case Studies & Success Stories](/books/ai-blue-team-ops/chapter8/)
+9. [Chapter 9 – Roadmap for the Next Decade](/books/ai-blue-team-ops/chapter9/)
+10. [Chapter 10 – Practical Implementation Guide](/books/ai-blue-team-ops/chapter10/)
 
 ## How to Read This Book
 

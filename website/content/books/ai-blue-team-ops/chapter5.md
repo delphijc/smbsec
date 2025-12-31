@@ -3,7 +3,7 @@ title = "Chapter 5 – Building a Low‑Cost AI Security Stack"
 date = "2025-11-28"
 weight = 50
 +++
-# Chapter 5 – Building a Low‑Cost AI Security Stack
+
 
 ## 5.1 Architecture Overview
 ```

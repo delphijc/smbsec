@@ -2,7 +2,7 @@
 title = "About"
 +++
 
-# About
+
 
 ## The Project
 
@@ -19,7 +19,7 @@ To bridge the gap between enterprise-level AI security solutions and the practic
 
 ## The Author
 
-**delphijc** is a cybersecurity professional focused on making advanced security technologies accessible to organizations of all sizes.
+**delphijc** is a cybersecurity professional focused on making advanced security technologies accessible to organizations of all sizes. [Find books on Amazon](https://www.amazon.com/s?k=jayson+cavendish).
 
 ## Contact
 

@@ -3,7 +3,7 @@ title = "Chapter 8 – Case Studies & Success Stories"
 date = "2025-11-28"
 weight = 80
 +++
-# Chapter 8 – Case Studies & Success Stories
+
 
 ## 8.1 Introduction
 This chapter presents real‑world deployments of the AI‑powered security stack described in the book. Each case study focuses on a small security team (5–15 analysts) that achieved measurable improvements in detection, response, and cost efficiency.

@@ -3,7 +3,7 @@ title = "Chapter 9 – Roadmap for the Next Decade"
 date = "2025-11-28"
 weight = 90
 +++
-# Chapter 9 – Roadmap for the Next Decade
+
 
 ## 9.1 Emerging AI Techniques
 - **Generative Models for Attack Simulation** – Use Stable‑Diffusion‑style models to generate realistic phishing emails, malware payloads, and network traffic for training.

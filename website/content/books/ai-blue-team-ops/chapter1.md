@@ -3,7 +3,7 @@ title = "Chapter 1 – The Cybersecurity Landscape Today"
 date = "2025-11-28"
 weight = 10
 +++
-# Chapter 1 – The Cybersecurity Landscape Today
+
 
 ## 1.1 The Evolving Threat Environment
 - **Attack surface expansion**: Cloud, IoT, supply‑chain, and remote‑work vectors.

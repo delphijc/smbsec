@@ -3,7 +3,7 @@ title = "Chapter 6 – Human‑AI Collaboration Models"
 date = "2025-11-28"
 weight = 60
 +++
-# Chapter 6 – Human‑AI Collaboration Models
+
 
 ## 6.1 The Analyst‑AI Workflow
 1. **Alert Reception** – Analysts view alerts in Elastic SIEM or a custom dashboard.

@@ -2,7 +2,7 @@
 title = "Books"
 +++
 
-# Books
+
 
 Welcome to the Books section. Here you'll find comprehensive guides on AI-enabled security operations.
 

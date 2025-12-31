@@ -3,7 +3,7 @@ title = "Chapter 2 – Machine Learning Basics for Security"
 date = "2025-11-28"
 weight = 20
 +++
-# Chapter 2 – Machine Learning Basics for Security
+
 
 ## 2.1 Core Machine‑Learning Concepts
 - **Supervised vs. Unsupervised**: Labelled data for anomaly detection vs. clustering of unknown patterns.

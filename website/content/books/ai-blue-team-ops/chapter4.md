@@ -3,7 +3,7 @@ title = "Chapter 4 – Automated Incident Response"
 date = "2025-11-28"
 weight = 40
 +++
-# Chapter 4 – Automated Incident Response
+
 
 ## 4.1 The Incident‑Response Lifecycle
 1. **Detection** – Alerts from the AI‑driven threat‑detection pipeline.

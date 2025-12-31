@@ -13,8 +13,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter1/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter1/</guid>
-      <description>&lt;h1 id=&#34;chapter1--the-cybersecurity-landscape-today&#34;&gt;Chapter 1 – The Cybersecurity Landscape Today&lt;/h1&gt;
-&lt;h2 id=&#34;11-the-evolving-threat-environment&#34;&gt;1.1 The Evolving Threat Environment&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;11-the-evolving-threat-environment&#34;&gt;1.1 The Evolving Threat Environment&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Attack surface expansion&lt;/strong&gt;: Cloud, IoT, supply‑chain, and remote‑work vectors.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Sophistication of adversaries&lt;/strong&gt;: APT groups, ransomware‑as‑a‑service, and automated exploitation.&lt;/li&gt;
@@ -47,8 +46,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter2/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter2/</guid>
-      <description>&lt;h1 id=&#34;chapter2--machine-learning-basics-for-security&#34;&gt;Chapter 2 – Machine Learning Basics for Security&lt;/h1&gt;
-&lt;h2 id=&#34;21-core-machinelearning-concepts&#34;&gt;2.1 Core Machine‑Learning Concepts&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;21-core-machinelearning-concepts&#34;&gt;2.1 Core Machine‑Learning Concepts&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Supervised vs. Unsupervised&lt;/strong&gt;: Labelled data for anomaly detection vs. clustering of unknown patterns.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Feature Engineering&lt;/strong&gt;: Transform raw logs, network flows, or threat‑intel into numeric vectors.&lt;/li&gt;
@@ -115,8 +113,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter3/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter3/</guid>
-      <description>&lt;h1 id=&#34;chapter3--aidriven-threat-detection&#34;&gt;Chapter 3 – AI‑Driven Threat Detection&lt;/h1&gt;
-&lt;h2 id=&#34;31-the-threatdetection-pipeline&#34;&gt;3.1 The Threat‑Detection Pipeline&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;31-the-threatdetection-pipeline&#34;&gt;3.1 The Threat‑Detection Pipeline&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Data Collection&lt;/strong&gt; – Logs, network flows, endpoint telemetry, and threat‑intel feeds are ingested into a central store (Elasticsearch, PostgreSQL, or a vector database).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Pre‑processing &amp;amp; Normalization&lt;/strong&gt; – Structured logs are parsed, timestamps aligned, and categorical fields encoded.&lt;/li&gt;
@@ -165,8 +162,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter4/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter4/</guid>
-      <description>&lt;h1 id=&#34;chapter4--automated-incident-response&#34;&gt;Chapter 4 – Automated Incident Response&lt;/h1&gt;
-&lt;h2 id=&#34;41-the-incidentresponse-lifecycle&#34;&gt;4.1 The Incident‑Response Lifecycle&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;41-the-incidentresponse-lifecycle&#34;&gt;4.1 The Incident‑Response Lifecycle&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Detection&lt;/strong&gt; – Alerts from the AI‑driven threat‑detection pipeline.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Triage&lt;/strong&gt; – Automated scoring and enrichment to prioritize incidents.&lt;/li&gt;
@@ -216,8 +212,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter5/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter5/</guid>
-      <description>&lt;h1 id=&#34;chapter5--building-a-lowcost-ai-security-stack&#34;&gt;Chapter 5 – Building a Low‑Cost AI Security Stack&lt;/h1&gt;
-&lt;h2 id=&#34;51-architecture-overview&#34;&gt;5.1 Architecture Overview&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;51-architecture-overview&#34;&gt;5.1 Architecture Overview&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;+-------------------+          +-------------------+
 |  Data Sources    |  ---&amp;gt;   |  Ingestion Layer  |
 +-------------------+          +-------------------+
@@ -375,8 +370,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter6/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter6/</guid>
-      <description>&lt;h1 id=&#34;chapter6--humanai-collaboration-models&#34;&gt;Chapter 6 – Human‑AI Collaboration Models&lt;/h1&gt;
-&lt;h2 id=&#34;61-the-analystai-workflow&#34;&gt;6.1 The Analyst‑AI Workflow&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;61-the-analystai-workflow&#34;&gt;6.1 The Analyst‑AI Workflow&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Alert Reception&lt;/strong&gt; – Analysts view alerts in Elastic SIEM or a custom dashboard.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;AI‑Assisted Triage&lt;/strong&gt; – LLMs provide concise summaries and risk scores.&lt;/li&gt;
@@ -437,8 +431,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter7/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter7/</guid>
-      <description>&lt;h1 id=&#34;chapter7--governance-ethics-and-compliance&#34;&gt;Chapter 7 – Governance, Ethics, and Compliance&lt;/h1&gt;
-&lt;h2 id=&#34;71-ethical-foundations&#34;&gt;7.1 Ethical Foundations&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;71-ethical-foundations&#34;&gt;7.1 Ethical Foundations&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Bias &amp;amp; Fairness&lt;/strong&gt; – ML models can inherit biases from training data. Use balanced datasets and audit for disparate impact.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Transparency&lt;/strong&gt; – Provide clear explanations for AI decisions (risk scores, suggested actions).&lt;/li&gt;
@@ -524,8 +517,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter8/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter8/</guid>
-      <description>&lt;h1 id=&#34;chapter8--case-studies--success-stories&#34;&gt;Chapter 8 – Case Studies &amp;amp; Success Stories&lt;/h1&gt;
-&lt;h2 id=&#34;81-introduction&#34;&gt;8.1 Introduction&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;81-introduction&#34;&gt;8.1 Introduction&lt;/h2&gt;
 &lt;p&gt;This chapter presents real‑world deployments of the AI‑powered security stack described in the book. Each case study focuses on a small security team (5–15 analysts) that achieved measurable improvements in detection, response, and cost efficiency.&lt;/p&gt;
 &lt;h2 id=&#34;82-case-study-1-fintech-startup--elasticsiem--opencti&#34;&gt;8.2 Case Study 1: FinTech Startup – Elastic SIEM + OpenCTI&lt;/h2&gt;
 &lt;ul&gt;
@@ -606,8 +598,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter9/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter9/</guid>
-      <description>&lt;h1 id=&#34;chapter9--roadmap-for-the-next-decade&#34;&gt;Chapter 9 – Roadmap for the Next Decade&lt;/h1&gt;
-&lt;h2 id=&#34;91-emerging-ai-techniques&#34;&gt;9.1 Emerging AI Techniques&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;91-emerging-ai-techniques&#34;&gt;9.1 Emerging AI Techniques&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Generative Models for Attack Simulation&lt;/strong&gt; – Use Stable‑Diffusion‑style models to generate realistic phishing emails, malware payloads, and network traffic for training.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Graph Neural Networks (GNNs)&lt;/strong&gt; – Apply GNNs to model attacker movement across complex supply chains and cloud infrastructures.&lt;/li&gt;
@@ -693,8 +684,7 @@
       <link>//localhost:1313/books/ai-blue-team-ops/chapter10/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/books/ai-blue-team-ops/chapter10/</guid>
-      <description>&lt;h1 id=&#34;chapter10--practical-implementation-guide&#34;&gt;Chapter 10 – Practical Implementation Guide&lt;/h1&gt;
-&lt;h2 id=&#34;101-overview&#34;&gt;10.1 Overview&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;101-overview&#34;&gt;10.1 Overview&lt;/h2&gt;
 &lt;p&gt;This chapter provides a step‑by‑step blueprint for building, deploying, and maintaining the AI‑powered security stack described in the book. It assumes a small security team (5–15 analysts) with basic DevOps skills.&lt;/p&gt;
 &lt;h2 id=&#34;102-prerequisites&#34;&gt;10.2 Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
@@ -839,12 +829,21 @@
 &lt;p&gt;As explored in &lt;a href=&#34;../../books/ai-blue-team-ops/chapter1&#34;&gt;Chapter 1&lt;/a&gt;, the traditional perimeter is dead. With 70% of organizations struggling to hire security talent, manual triage is no longer sustainable. Artificial Intelligence (AI) and Machine Learning (ML) are not just buzzwords—they are essential tools for survival. By automating routine tasks like log parsing and initial triage, AI frees up human analysts to focus on high-value decision-making.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Copilot Chat - Workflows and Agents</title>
+      <link>//localhost:1313/blogs/copilot-chat-agents/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blogs/copilot-chat-agents/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Transforming AI Interaction for Process Improvement&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We have authorized the use of &lt;strong&gt;Copilot Chat&lt;/strong&gt;, a powerful, non-learning LLM. This ensures that your data remains confidential and secure. However, to get the most out of Generative AI, chatbots require structured input. This is where &lt;strong&gt;Workflows&lt;/strong&gt; and &lt;strong&gt;Agents&lt;/strong&gt; come into play.&lt;/p&gt;
+&lt;h2 id=&#34;the-power-of-structure-workflows&#34;&gt;The Power of Structure: Workflows&lt;/h2&gt;
+&lt;p&gt;AI excels at reading files and following directions. By using simple text files (Markdown &lt;code&gt;*.md&lt;/code&gt;, CSV &lt;code&gt;*.csv&lt;/code&gt;, etc.), we can create &amp;ldquo;Workflows&amp;rdquo;—groups of instructions that guide the AI before we even start prompting.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>About</title>
       <link>//localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/about/</guid>
-      <description>&lt;h1 id=&#34;about&#34;&gt;About&lt;/h1&gt;
-&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
 &lt;p&gt;This site is dedicated to making AI-enabled cybersecurity accessible and practical for small to medium-sized businesses. We believe that advanced security capabilities shouldn&amp;rsquo;t be limited to large enterprises with extensive resources.&lt;/p&gt;
 &lt;h2 id=&#34;our-mission&#34;&gt;Our Mission&lt;/h2&gt;
 &lt;p&gt;To bridge the gap between enterprise-level AI security solutions and the practical needs of SMB security teams through:&lt;/p&gt;
@@ -855,7 +854,7 @@
 &lt;li&gt;&lt;strong&gt;Actionable strategies&lt;/strong&gt; for building effective blue team operations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;the-author&#34;&gt;The Author&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;delphijc&lt;/strong&gt; is a cybersecurity professional focused on making advanced security technologies accessible to organizations of all sizes.&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;delphijc&lt;/strong&gt; is a cybersecurity professional focused on making advanced security technologies accessible to organizations of all sizes. &lt;a href=&#34;https://www.amazon.com/s?k=jayson+cavendish&#34;&gt;Find books on Amazon&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

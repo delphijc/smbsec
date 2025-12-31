@@ -3,7 +3,7 @@ title = "Chapter 3 – AI‑Driven Threat Detection"
 date = "2025-11-28"
 weight = 30
 +++
-# Chapter 3 – AI‑Driven Threat Detection
+
 
 ## 3.1 The Threat‑Detection Pipeline
 1. **Data Collection** – Logs, network flows, endpoint telemetry, and threat‑intel feeds are ingested into a central store (Elasticsearch, PostgreSQL, or a vector database).

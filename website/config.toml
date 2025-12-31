@@ -13,6 +13,7 @@ theme = "PaperMod"
   author = "delphijc"
   showReadingTime = true
   disableSpecial1 = false
+  mainSections = ["blogs"]
 
 [menu]
   [[menu.main]]

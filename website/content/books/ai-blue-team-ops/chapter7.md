@@ -3,7 +3,7 @@ title = "Chapter 7 – Governance, Ethics, and Compliance"
 date = "2025-11-28"
 weight = 70
 +++
-# Chapter 7 – Governance, Ethics, and Compliance
+
 
 ## 7.1 Ethical Foundations
 - **Bias & Fairness** – ML models can inherit biases from training data. Use balanced datasets and audit for disparate impact.
