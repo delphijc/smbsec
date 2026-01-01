@@ -32,25 +32,37 @@
     <loc>//localhost:1313/books/ai-blue-team-ops/chapter10/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/tags/2026-outlook/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/ai/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/blogs/</loc>
-    <lastmod>2025-12-29T23:30:00-05:00</lastmod>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/cybersecurity/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blogs/cyber-outlook-2026/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/quantum/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/blogs/building_a_resilient_security_stack/</loc>
     <lastmod>2025-12-29T23:30:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2025-12-29T23:30:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/ai/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/copilot/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/blogs/copilot-chat-agents/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/cybersecurity/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/design-thinking/</loc>
@@ -66,9 +78,6 @@
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/risk-management/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/blogs/quantum-decryption-plan/</loc>
