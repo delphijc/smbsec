@@ -12,7 +12,7 @@ This site hosts books, blogs, and information about AI-enabled security operatio
 
 Explore our comprehensive guides on AI-enabled blue team operations and cybersecurity best practices.
 
-**Recent:** [AI Enabled Blue Team Operations for Small to Medium Size Businesses](/books/ai-blue-team-ops/)
+**Recent:** {{< latest_post section="books" target="sections" >}}
 
 [Visit the Books section →](/books/)
 
@@ -20,7 +20,7 @@ Explore our comprehensive guides on AI-enabled blue team operations and cybersec
 
 Stay updated with the latest insights, tutorials, and industry perspectives.
 
-**Recent:** [Copilot Chat - Workflows and Agents](/blogs/copilot-chat-agents/)
+**Recent:** {{< latest_post section="blogs" >}}
 
 [Visit the Blogs section →](/blogs/)
 

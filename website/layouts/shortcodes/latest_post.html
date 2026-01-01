@@ -1,0 +1,15 @@
+{{- $sectionName := .Get "section" -}}
+{{- $target := .Get "target" | default "pages" -}}
+{{- $sectionPage := site.GetPage "section" $sectionName -}}
+
+{{- $items := slice -}}
+{{- if eq $target "sections" -}}
+{{- $items = $sectionPage.Sections -}}
+{{- else -}}
+{{- $items = $sectionPage.RegularPages -}}
+{{- end -}}
+
+{{- $latest := index ($items.ByDate.Reverse) 0 -}}
+{{- if $latest -}}
+<a href="{{ $latest.RelPermalink }}">{{ $latest.Title }}</a>
+{{- end -}}
