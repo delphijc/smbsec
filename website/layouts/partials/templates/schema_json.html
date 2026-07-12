@@ -1,0 +1,82 @@
+{{ if .IsHome }}
+{{- $logo_url := site.Params.assets.favicon | default "favicon.ico" | absURL -}}
+{{- $publisher_type := site.Params.schema.publisherType | default "Organization" | title -}}
+{{- $sameAs := slice -}}
+{{- if site.Params.schema.sameAs -}}
+  {{- range site.Params.schema.sameAs -}}{{ $sameAs = $sameAs | append (trim . " ") }}{{- end -}}
+{{- else -}}
+  {{- range site.Params.SocialIcons -}}{{ $sameAs = $sameAs | append (trim .url " ") }}{{- end -}}
+{{- end -}}
+
+{{- $home_json := dict "@context" "https://schema.org" "@type" $publisher_type "name" site.Title "url" (site.Home.Permalink | absURL) "description" (site.Params.description | plainify | truncate 180) "sameAs" $sameAs -}}
+{{- if eq $publisher_type "Person" -}}
+  {{- $home_json = merge $home_json (dict "image" $logo_url) -}}
+{{- else -}}
+  {{- $home_json = merge $home_json (dict "logo" $logo_url) -}}
+{{- end -}}
+<script type="application/ld+json">{{ $home_json | jsonify | safeHTML }}</script>
+
+{{- else if (or .IsPage .IsSection) }}
+{{/* BreadcrumbList */}}
+{{- $url := replace .Parent.Permalink ( printf "%s" site.Home.Permalink) "" }}
+{{- $lang_url := strings.TrimPrefix ( printf "%s/" .Lang) $url }}
+{{- $bc_list := (split $lang_url "/")}}
+
+{{- $scratch := newScratch }}
+{{- $itemList := slice -}}
+{{- range $index, $element := $bc_list -}}
+  {{- $scratch.Add "path" (printf "%s/" $element ) -}}
+  {{- $bc_pg := site.GetPage ($scratch.Get "path") -}}
+  {{- if (and ($bc_pg) (gt (len . ) 0)) -}}
+    {{- $itemList = $itemList | append (dict "@type" "ListItem" "position" (add 1 $index) "name" $bc_pg.Name "item" ($bc_pg.Permalink | absURL)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $itemList = $itemList | append (dict "@type" "ListItem" "position" (add 1 (len $bc_list)) "name" .Name "item" (.Permalink | absURL)) -}}
+
+{{- $bc_json := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $itemList -}}
+<script type="application/ld+json">{{ $bc_json | jsonify | safeHTML }}</script>
+
+{{- if .IsPage }}
+{{- $desc := .Description | plainify -}}
+{{- if not $desc }}{{ $desc = .Summary | plainify }}{{ end -}}
+
+{{- $author := "" -}}
+{{- with (.Params.author | default site.Params.author) -}}
+  {{- if (or (eq (printf "%T" .) "[]string") (eq (printf "%T" .) "[]interface {}")) -}}
+    {{- $author_list := slice -}}
+    {{- range . -}}
+      {{- $author_list = $author_list | append (dict "@type" "Person" "name" .) -}}
+    {{- end -}}
+    {{- $author = $author_list -}}
+  {{- else -}}
+    {{- $author = dict "@type" "Person" "name" . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $image := "" -}}
+{{- if .Params.cover.image -}}
+  {{- if (ne .Params.cover.relative true) -}}
+    {{- $image = .Params.cover.image | absURL -}}
+  {{- else -}}
+    {{- $image = (path.Join .RelPermalink .Params.cover.image) | absURL -}}
+  {{- end -}}
+{{- else -}}
+  {{- $images := partial "templates/_funcs/get-page-images" . -}}
+  {{- with index $images 0 -}}
+    {{- $image = .Permalink -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $publisher := dict "@type" (site.Params.schema.publisherType | default "Organization" | title) "name" site.Title "logo" (dict "@type" "ImageObject" "url" (site.Params.assets.favicon | default "favicon.ico" | absURL)) -}}
+
+{{- $post_json := dict "@context" "https://schema.org" "@type" "BlogPosting" "headline" (.Title | plainify) "name" (.Title | plainify) "description" $desc "keywords" (.Params.tags | default .Params.keywords) "articleBody" (.Content | htmlUnescape | plainify) "wordCount" .WordCount "inLanguage" (.Language.Lang | default "en-us") "datePublished" .PublishDate "dateModified" .Lastmod "mainEntityOfPage" (dict "@type" "WebPage" "@id" (.Permalink | absURL)) "publisher" $publisher -}}
+{{- if $image -}}
+  {{- $post_json = merge $post_json (dict "image" $image) -}}
+{{- end -}}
+{{- if $author -}}
+  {{- $post_json = merge $post_json (dict "author" $author) -}}
+{{- end -}}
+<script type="application/ld+json">{{ $post_json | jsonify | safeHTML }}</script>
+{{- end }}{{/* .IsPage end */}}
+
+{{- end -}}
