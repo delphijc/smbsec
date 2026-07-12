@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://ai-sec-book.pages.dev/"
 relativeURLs = true
 canonifyURLs = false
 languageCode = "en-us"
