@@ -1,0 +1,3 @@
+Summary: Add repository Software Bill of Materials (sbom.json) and security findings report.
+Files: sbom.json, security-findings.md
+Rationale: Track automated security audit and dependency inventory across workspace.
