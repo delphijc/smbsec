@@ -1,10 +1,10 @@
 # Security Findings Report: smbsec
 
-**Generated:** 2026-10-12 09:17:19 EDT
+**Generated:** 2026-10-18 07:37:23 EDT
 **Repository:** /Users/delphijc/Projects/smbsec
 **Origin:** https://github.com/delphijc/smbsec.git
 **Branch:** main
-**Commit:** a0ed026e1683
+**Commit:** 161b5be5734b
 
 ## Summary
 

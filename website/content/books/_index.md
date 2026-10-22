@@ -23,4 +23,19 @@ A practical guide to implementing AI-powered blue team security operations tailo
 
 ---
 
+### I am Sam
+
+The story of a personal AI infrastructure — from first question to sovereign system. A security architect's journey building a complete AI system on local hardware, with memory, voice, agents, and security baked in.
+
+**Topics covered:**
+- The NotebookLM moment that started it all
+- Building local AI tools (voice, vision, agents)
+- Security thinking applied to AI infrastructure
+- The sovereignty philosophy that shaped every decision
+- From isolated scripts to a coordinated platform
+
+[Read the book →](/books/i-am-sam/)
+
+---
+
 *More books coming soon...*
